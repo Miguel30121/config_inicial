@@ -3,7 +3,11 @@
 //#define GLEW_STATIC
 
 #include <GL/glew.h>
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 85acce7736db05836ef7b8008b349c391be94de3
 #include <GLFW/glfw3.h>
 
 // Shaders
@@ -59,9 +63,15 @@ int main() {
 
 	// Set up vertex data (and buffer(s)) and attribute pointers
 	float vertices[] = {
+<<<<<<< HEAD
 		-0.5f,  0.5f, 0.0f,    1.0f,0.0f,0.0f,  // top right
 		-0.5f, -0.5f, 0.0f,    1.0f,1.0f,0.0f,  // bottom right
 		0.5f, 0.5f, 0.0f,   1.0f,0.0f,1.0f,  // bottom left
+=======
+		0.5f,  0.5f, 0.0f,    1.0f,0.0f,0.0f,  // top right
+		0.5f, -0.5f, 0.0f,    1.0f,1.0f,0.0f,  // bottom right
+		-0.5f, -0.5f, 0.0f,   1.0f,0.0f,1.0f,  // bottom left
+>>>>>>> 85acce7736db05836ef7b8008b349c391be94de3
 		-0.5f,  0.5f, 0.0f,   1.0f,1.0f,0.0f, // top left 
 	};
 	unsigned int indices[] = {  // note that we start from 0!
@@ -123,11 +133,19 @@ int main() {
         /*glPointSize(10);
         glDrawArrays(GL_POINTS,0,4);*/
         
+<<<<<<< HEAD
         /*glDrawArrays(GL_LINES,0,4);*/
         //glDrawArrays(GL_LINE_LOOP,0,4);
         
         glDrawArrays(GL_TRIANGLES,0,3);
         /*glDrawElements(GL_TRIANGLES, 6,GL_UNSIGNED_INT,0);*/
+=======
+        //glDrawArrays(GL_LINES,0,4);
+        //glDrawArrays(GL_LINE_LOOP,0,4);
+        
+        //glDrawArrays(GL_TRIANGLES,0,3);
+        glDrawElements(GL_TRIANGLES, 6,GL_UNSIGNED_INT,0);
+>>>>>>> 85acce7736db05836ef7b8008b349c391be94de3
 
         
         
