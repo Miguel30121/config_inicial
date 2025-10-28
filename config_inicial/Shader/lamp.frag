@@ -1,9 +1,9 @@
-// lamp.frag
 #version 330 core
 out vec4 FragColor;
+  
 
-uniform vec3 lampColor;  //  color que le mandaremos 
 
-void main() {
-    FragColor = vec4(lampColor, 1.0);
+void main()
+{
+     FragColor = vec4(1.0f);
 }
